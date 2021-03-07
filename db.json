@@ -1,105 +1,95 @@
 {
-    "posts": [{
-            "id": 1,
-            "aggregations": {
-                "filtered_docs": {
-                    "correlation-id": {
-                        "buckets": [{
-                                "key": "111234",
-                                "logic-type": {
-                                    "buckets": [{
-                                            "key": "M",
-                                            "logic-name": {
-                                                "buckets": [{
-                                                        "key": "method-11",
-                                                        "latency": {
-                                                            "value": 213
-                                                        }
-                                                    }, {
-                                                        "key": "method-12",
-                                                        "latency": {
-                                                            "value": 350
-                                                        }
-                                                    }
-                                                ]
-                                            }
-                                        }, {
-                                            "key": "PB",
-                                            "logic-name": {
-                                                "buckets": [{
-                                                        "key": "Process-Task-11",
-                                                        "latency": {
-                                                            "value": 120
-                                                        }
-                                                    }, {
-                                                        "key": "Process-Task-12",
-                                                        "latency": {
-                                                            "value": 70
-                                                        }
-                                                    }
-                                                ]
-                                            }
-                                        }
-                                    ]
-                                },
-                                "business-use-cases": {
-                                    "buckets": [{
-                                            "key": "/transaction-1",
-                                        }
-                                    ]
-                                }
-                            }, {
-                                "key": "2314453",
-                                "logic-type": {
-                                    "buckets": [{
-                                            "key": "M",
-                                            "logic-name": {
-                                                "buckets": [{
-                                                        "key": "method-21",
-                                                        "latency": {
-                                                            "value": 56
-                                                        }
-                                                    }, {
-                                                        "key": "method-22",
-                                                        "latency": {
-                                                            "value": 134
-                                                        }
-                                                    }
-                                                ]
-                                            }
-                                        }, {
-                                            "key": "PB",
-                                            "logic-name": {
-                                                "buckets": [{
-                                                        "key": "Process-Task-21",
-                                                        "latency": {
-                                                            "value": 156
-                                                        }
-                                                    }, {
-                                                        "key": "Process-Task-22",
-                                                        "latency": {
-                                                            "value": 70
-                                                        }
-                                                    }
-                                                ]
-                                            }
-                                        }
-                                    ]
-                                },
-                                "business-use-cases": {
-                                    "buckets": [{
-                                            "key": "/transaction-2",
-                                        }
-                                    ]
-                                }
-                            }
-                        ]
-                    }
-                }
-            }
-        }
-    ],
-    "profile": {
-        "name": "vega-test-visualization"
-    }
+	"posts": [{
+		"id": 1,
+		"aggregations": {
+			"filtered_docs": {
+				"correlation-id": {
+					"buckets": [{
+						"key": "111234",
+						"logic-type": {
+							"buckets": [{
+								"key": "M",
+								"logic-name": {
+									"buckets": [{
+										"key": "method-11",
+										"latency": {
+											"value": 213
+										}
+									}, {
+										"key": "method-12",
+										"latency": {
+											"value": 350
+										}
+									}]
+								}
+							}, {
+								"key": "PB",
+								"logic-name": {
+									"buckets": [{
+										"key": "Process-Task-11",
+										"latency": {
+											"value": 120
+										}
+									}, {
+										"key": "Process-Task-12",
+										"latency": {
+											"value": 70
+										}
+									}]
+								}
+							}]
+						},
+						"business-use-cases": {
+							"buckets": [{
+								"key": "/transaction-1"
+							}]
+						}
+					}, {
+						"key": "2314453",
+						"logic-type": {
+							"buckets": [{
+								"key": "M",
+								"logic-name": {
+									"buckets": [{
+										"key": "method-21",
+										"latency": {
+											"value": 56
+										}
+									}, {
+										"key": "method-22",
+										"latency": {
+											"value": 134
+										}
+									}]
+								}
+							}, {
+								"key": "PB",
+								"logic-name": {
+									"buckets": [{
+										"key": "Process-Task-21",
+										"latency": {
+											"value": 156
+										}
+									}, {
+										"key": "Process-Task-22",
+										"latency": {
+											"value": 70
+										}
+									}]
+								}
+							}]
+						},
+						"business-use-cases": {
+							"buckets": [{
+								"key": "/transaction-2"
+							}]
+						}
+					}]
+				}
+			}
+		}
+	}],
+	"profile": {
+		"name": "vega-test-visualization"
+	}
 }
